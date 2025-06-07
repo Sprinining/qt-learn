@@ -1,0 +1,64 @@
+# 忽略所有子目录中的 build 文件夹
+build/
+
+# 一般常见的构建输出文件夹
+build-*/
+_build*/
+out*/
+debug*/
+release*/
+
+# 忽略操作系统临时文件和隐藏文件
+.DS_Store
+Thumbs.db
+
+# 忽略编译产物和中间文件
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+*.tmp
+
+# 忽略 Qt 相关生成文件
+*.moc
+*.rcc
+*.qrc
+*.ts
+*.qm
+*.user
+*.user.*
+*.autosave
+
+# Qt Creator 项目文件和备份
+*.pro.user
+*.pro.user.*
+*.creator.user
+*.creator.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+
+# CMake 生成的文件和文件夹
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Qt Creator自动生成的配置文件
+*.swp
+*.swo
+
+# 临时文件夹
+tmp/
+temp/
+
+# 其他常见编辑器文件
+.vscode/
+.idea/
+
+# Node.js 相关（如果项目里有）
+node_modules/
+dist/

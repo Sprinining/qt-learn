@@ -1,0 +1,43 @@
+# .clang-format - Java风格C++代码格式配置示例
+
+# 基于 LLVM 风格为基础修改
+BasedOnStyle: LLVM
+
+# 缩进宽度
+IndentWidth: 4
+
+# 不使用Tab，全部用空格
+UseTab: Never
+
+# 每行最大字符数，超过换行
+ColumnLimit: 100
+
+# 大括号风格 - 关闭所有另起一行的大括号，使其与语句同一行
+BraceWrapping:
+  AfterClass: false               # 类定义的大括号不另起行
+  AfterControlStatement: false   # if/for/while/else等控制语句后大括号不另起行
+  AfterEnum: false               # 枚举定义的大括号不另起行
+  AfterFunction: false           # 函数定义的大括号不另起行
+  AfterNamespace: false          # 命名空间的大括号不另起行
+  AfterStruct: false             # struct定义的大括号不另起行
+  AfterUnion: false              # union定义的大括号不另起行
+  BeforeCatch: false             # catch前的大括号不另起行
+  BeforeElse: false              # else前的大括号不另起行
+
+# 其他常用格式选项（根据需要可调整）
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+SortIncludes: true
+
+# 对齐相关
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# 空行设置
+MaxEmptyLinesToKeep: 1
+
+# 其他
+PointerAlignment: Left  # 指针*符号靠左，写成 int* ptr
+---
+

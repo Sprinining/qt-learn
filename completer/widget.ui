@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>160</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblDay">
+      <property name="text">
+       <string>星期几(&amp;D)</string>
+      </property>
+      <property name="buddy">
+       <cstring>edtDay</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="edtDay"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblYear">
+      <property name="text">
+       <string>哪一年(&amp;Y)</string>
+      </property>
+      <property name="buddy">
+       <cstring>edtYear</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="edtYear"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblKasa">
+      <property name="text">
+       <string>卡萨什么(&amp;K)</string>
+      </property>
+      <property name="buddy">
+       <cstring>edtKasa</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="edtKasa"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
