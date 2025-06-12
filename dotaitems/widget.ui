@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <item>
+        <property name="text">
+         <string>大刀</string>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/afac.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#0090ff; background-color:#121212;&quot;&gt;+999点攻击力&lt;br/&gt;+30%攻速&lt;br/&gt;-20点敏 捷&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#66ffff; background-color:#121212;&quot;&gt;+35%的物理攻击闪避&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/afac.jpg</normaloff>:/icons/afac.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>宝典</string>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/ajen.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#0090ff; background-color:#121212;&quot;&gt;+10点攻击力&lt;br/&gt;+10%攻速&lt;br/&gt;+10点敏 捷&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#66ffff; background-color:#121212;&quot;&gt;+40%的物理攻击闪避&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/ajen.jpg</normaloff>:/icons/ajen.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>鞋子</string>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/belv.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#0090ff; background-color:#121212;&quot;&gt;+10点攻击力&lt;br/&gt;+10%攻速&lt;br/&gt;+80点敏 捷&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'宋体,arial,sans-serif'; font-size:12px; color:#66ffff; background-color:#121212;&quot;&gt;+50%的物理攻击闪避&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/belv.jpg</normaloff>:/icons/belv.jpg</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditToolTip"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnAdd">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDel">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnViewMode">
+       <property name="text">
+        <string>切换显示模式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnLoad">
+       <property name="text">
+        <string>加载</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSave">
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnEditToolTip">
+       <property name="text">
+        <string>编辑工具提示</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
