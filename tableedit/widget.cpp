@@ -79,21 +79,10 @@ void Widget::on_btnSave_clicked() {
     }
 
     QTextStream tsOut(&fileOut);
-    tsOut.setRealNumberNotation(QTextStream::FixedNotation);
-    tsOut.setRealNumberPrecision(2);
-
-    // 写入表头
     tsOut << tr("#姓名\t岁数\t体重") << Qt::endl;
-
-    // 写入每一行数据
     for (int i = 0; i < nCount; i++) {
         QString strCurAll = ui->listWidget->item(i)->text();
-        QTextStream tsLine(&strCurAll);
-        QString strName;
-        int nAge;
-        double dblWeight;
-        tsLine >> strName >> nAge >> dblWeight;
-        tsOut << strName << "\t" << nAge << "\t" << dblWeight << Qt::endl;
+        tsOut << strCurAll << Qt::endl;
     }
 
     QMessageBox::information(this, tr("保存文件"), tr("保存表格文件成功。"));
